@@ -1,0 +1,8 @@
+{
+  "name": "lintconfig",
+  "version": "0.0.1",
+  "description": "Eslint configuration based on NPM's code style-guide. ",
+  "main": "index.js",
+  "author": "AMCorvi <am@corvi.co>",
+  "license": "MIT"
+}
