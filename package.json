@@ -1,6 +1,6 @@
 {
   "name": "@amcorvi/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Eslint configuration based on NPM's code style-guide. ",
   "main": "index.js",
   "author": "AMCorvi <am@corvi.co>",
@@ -42,10 +42,17 @@
     "eslint": ">= 4.18",
     "eslint-plugin-react": ">= 7.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "semantic-release": "^15.0.3",
+    "semantic-release-cli": "3.6.4"
+  },
   "dependencies": {
     "chalk": "2.3.2",
     "chalk-animation": "1.4.0",
     "cli-clear": "1.0.4"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+    ,"commit": "git-cz"
   }
 }
