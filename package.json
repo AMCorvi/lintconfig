@@ -1,6 +1,6 @@
 {
   "name": "@amcorvi/eslint-config",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "Eslint configuration based on NPM's code style-guide. ",
   "main": "index.js",
   "author": "AMCorvi <am@corvi.co>",
