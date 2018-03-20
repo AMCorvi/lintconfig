@@ -42,6 +42,7 @@ module.exports = {
       }
     ]
     ,'array-bracket-spacing':  [ 'error', 'always', { singleValue: false } ]
+    ,'array-bracket-newline':  [ 'error', 'consistent' ]
     ,'function-paren-newline': [ 'error', 'consistent', { minItems: 4 } ]
     ,'require-jsdoc':          [
       'warn'
@@ -53,9 +54,10 @@ module.exports = {
         ,FunctionExpression:      true
       }}
     ]
+    ,'space-before-blocks':         'error'
+    ,'space-before-function-paren': [ 'error', 'always' ]
 
     /*                Inactive linting rules                    */
-    ,'array-bracket-newline':            'off'
     ,'array-callback-return':            'off'
     ,'array-element-newline':            'off'
     ,'arrow-body-style':                 'off'
@@ -278,8 +280,6 @@ module.exports = {
     ,'sort-imports':                     'off'
     ,'sort-keys':                        'off'
     ,'sort-vars':                        'off'
-    ,'space-before-blocks':              'off'
-    ,'space-before-function-paren':      'off'
     ,'space-in-parens':                  'off'
     ,'space-infix-ops':                  'off'
     ,'space-unary-ops':                  'off'

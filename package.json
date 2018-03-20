@@ -52,7 +52,7 @@
     "cli-clear": "1.0.4"
   },
   "scripts": {
-    "semantic-release": "semantic-release"
-    ,"commit": "git-cz"
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   }
 }
