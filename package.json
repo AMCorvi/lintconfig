@@ -43,6 +43,9 @@
     "eslint-plugin-react": ">= 7.7.0"
   },
   "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "jest": "22.4.2",
     "semantic-release": "^15.0.3",
     "semantic-release-cli": "3.6.4"
   },
@@ -53,6 +56,13 @@
   },
   "scripts": {
     "semantic-release": "semantic-release",
+    "test":"jest",
+    "test:watch":"jest --watch",
     "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

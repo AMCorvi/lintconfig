@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const config = require('../lib/outputHelper.js')
+
 const animChalk = require("chalk-animation");
 const chalk = require("chalk");
 const clear = require("cli-clear");
@@ -34,7 +36,7 @@ function initConfig(Message) {
   const fs = require("fs");
 
   // write eslintrc File
-  return fs.writeFile(".eslintrc.js", AMConfig(), err => {
+  return fs.writeFile(".eslintrc.js", AMConfig(config), err => {
     if (err) throw err;
 
     setTimeout(function() {
@@ -45,16 +47,10 @@ function initConfig(Message) {
 }
 
 // Contents of eslintrc.js file
-function AMConfig() {
-  return `const AMConfig = require('@amcorvi/eslint-config')
-
-module.exports = Object.assign(AMConfig, {
-
-         /* Insert Overriding Eslint Rules Here */
-
-})
-  `;
+function AMConfig(config) {
+  return config.configText
 }
+
 
 function installDependencies(Message) {
   const exec = require("child_process").exec;
