@@ -10,7 +10,7 @@
     "url": "https://github.com/amcorvi/lintconfig.git"
   },
   "bin": {
-    "AMConfig": "./bin/AMClint.js"
+    "AMlint": "./bin/AMlint.js"
   },
   "keywords": [
     "NPM Style Guide",
